@@ -34,3 +34,9 @@ start neovim
 ```sh
 nvim
 ```
+
+install all plugin
+
+```sh
+:PackerInstall
+```
