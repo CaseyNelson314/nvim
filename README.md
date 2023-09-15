@@ -1,6 +1,6 @@
 # nvim
 
-windows 用 neovim 初期化ファイルたち
+neovim configuration files for windows
 
 ## setup
 
@@ -35,7 +35,7 @@ start neovim
 nvim
 ```
 
-install all plugin
+install all plugin (in vim)
 
 ```sh
 :PackerInstall
