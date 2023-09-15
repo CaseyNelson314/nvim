@@ -16,6 +16,12 @@ install neovim
 winget install --id=Neovim.Neovim  -e
 ```
 
+install neovim packege tool
+
+```sh
+git clone https://github.com/wbthomason/packer.nvim "$env:LOCALAPPDATA\nvim-data\site\pack\packer\start\packer.nvim"
+```
+
 clone repo
 
 ```sh
