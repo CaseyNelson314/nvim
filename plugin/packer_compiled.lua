@@ -79,16 +79,21 @@ _G.packer_plugins = {
     path = "C:\\Users\\casey\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\lexima.vim",
     url = "https://github.com/cohama/lexima.vim"
   },
-  nerdtree = {
-    loaded = false,
-    needs_bufread = false,
-    path = "C:\\Users\\casey\\AppData\\Local\\nvim-data\\site\\pack\\packer\\opt\\nerdtree",
-    url = "https://github.com/preservim/nerdtree"
+  ["lualine.nvim"] = {
+    loaded = true,
+    path = "C:\\Users\\casey\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\lualine.nvim",
+    url = "https://github.com/nvim-lualine/lualine.nvim"
   },
   ["nvim-treesitter"] = {
     loaded = true,
     path = "C:\\Users\\casey\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\nvim-treesitter",
     url = "https://github.com/nvim-treesitter/nvim-treesitter"
+  },
+  ["nvim-web-devicons"] = {
+    loaded = false,
+    needs_bufread = false,
+    path = "C:\\Users\\casey\\AppData\\Local\\nvim-data\\site\\pack\\packer\\opt\\nvim-web-devicons",
+    url = "https://github.com/nvim-tree/nvim-web-devicons"
   },
   ["packer.nvim"] = {
     loaded = true,
@@ -104,21 +109,6 @@ _G.packer_plugins = {
     loaded = true,
     path = "C:\\Users\\casey\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\telescope.nvim",
     url = "https://github.com/nvim-telescope/telescope.nvim"
-  },
-  ["vim-airline"] = {
-    loaded = true,
-    path = "C:\\Users\\casey\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\vim-airline",
-    url = "https://github.com/vim-airline/vim-airline"
-  },
-  ["vim-airline-themes"] = {
-    loaded = true,
-    path = "C:\\Users\\casey\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\vim-airline-themes",
-    url = "https://github.com/vim-airline/vim-airline-themes"
-  },
-  ["vim-devicons"] = {
-    loaded = true,
-    path = "C:\\Users\\casey\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\vim-devicons",
-    url = "https://github.com/ryanoasis/vim-devicons"
   }
 }
 

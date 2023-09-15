@@ -1,24 +1,16 @@
 require('plugins')
 
-vim.cmd([[
-  augroup packer_user_config
-    autocmd!
-    autocmd BufWritePost plugins.lua source <afile> | PackerCompile
-  augroup end
-]])
+local filebrowser = require('telescope.builtin')
+vim.keymap.set('n', 'ff', filebrowser.find_files, {})
+vim.keymap.set('n', 'fg', filebrowser.live_grep, {})
+vim.keymap.set('n', 'fb', filebrowser.buffers, {})
+vim.keymap.set('n', 'fh', filebrowser.help_tags, {})
 
--- ファイル検索
-local builtin = require('telescope.builtin')
-vim.keymap.set('n', 'ff', builtin.find_files, {}) -- Q この設定の場合どのキーを押せばいい? -- A <leader>ff とすると、<leader> は \ になっているので、\ff とする
-vim.keymap.set('n', 'fg', builtin.live_grep, {})
-vim.keymap.set('n', 'fb', builtin.buffers, {})
-vim.keymap.set('n', 'fh', builtin.help_tags, {})
-
-vim.cmd([[
-    let g:airline_theme = 'wombat'               
-    let g:airline#extensions#tabline#enabled = 1 
-    let g:airline_powerline_fonts = 1            
-]])
+require('lualine').setup {
+    options = {
+        theme = 'gruvbox'
+    }
+}
 
 -- 行番号表示
 vim.opt.number = true

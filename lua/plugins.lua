@@ -18,8 +18,12 @@ return require('packer').startup(function(use)
     use 'cohama/lexima.vim'
 
     -- ディレクトリとか表示してかっちょくするやつ
-    use 'vim-airline/vim-airline'
-    use 'vim-airline/vim-airline-themes'
-    use 'ryanoasis/vim-devicons'
+    use {
+        'nvim-lualine/lualine.nvim',
+        requires = {
+            'nvim-tree/nvim-web-devicons',
+            opt = true
+        }
+    }
 
 end)
