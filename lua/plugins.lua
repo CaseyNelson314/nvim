@@ -14,10 +14,10 @@ return require('packer').startup(function(use)
         requires = {{'nvim-lua/plenary.nvim'}}
     }
 
-    -- カッコの自動補完
+    -- カッコ自動補完
     use 'cohama/lexima.vim'
 
-    -- ディレクトリとか表示してかっちょくするやつ
+    -- パワーライン
     use {
         'nvim-lualine/lualine.nvim',
         requires = {
@@ -25,5 +25,8 @@ return require('packer').startup(function(use)
             opt = true
         }
     }
+
+    use 'godlygeek/tabular'
+    use 'preservim/vim-markdown'
 
 end)

@@ -105,10 +105,20 @@ _G.packer_plugins = {
     path = "C:\\Users\\casey\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\plenary.nvim",
     url = "https://github.com/nvim-lua/plenary.nvim"
   },
+  tabular = {
+    loaded = true,
+    path = "C:\\Users\\casey\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\tabular",
+    url = "https://github.com/godlygeek/tabular"
+  },
   ["telescope.nvim"] = {
     loaded = true,
     path = "C:\\Users\\casey\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\telescope.nvim",
     url = "https://github.com/nvim-telescope/telescope.nvim"
+  },
+  ["vim-markdown"] = {
+    loaded = true,
+    path = "C:\\Users\\casey\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\vim-markdown",
+    url = "https://github.com/preservim/vim-markdown"
   }
 }
 
