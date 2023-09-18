@@ -1,23 +1,20 @@
 vim.cmd [[packadd packer.nvim]]
 return require('packer').startup(function(use)
 
-    -- パッケージ管理ツール
+    -- package manager 
     use 'wbthomason/packer.nvim'
 
-    -- テーマ
+    -- theme
     use 'nvim-treesitter/nvim-treesitter'
 
-    -- ファイル検索
+    -- file browser
     use {
         'nvim-telescope/telescope.nvim',
         tag = '0.1.3',
         requires = {{'nvim-lua/plenary.nvim'}}
     }
 
-    -- カッコ自動補完
-    use 'cohama/lexima.vim'
-
-    -- パワーライン
+    -- power line
     use {
         'nvim-lualine/lualine.nvim',
         requires = {
@@ -25,8 +22,5 @@ return require('packer').startup(function(use)
             opt = true
         }
     }
-
-    use 'godlygeek/tabular'
-    use 'preservim/vim-markdown'
 
 end)
